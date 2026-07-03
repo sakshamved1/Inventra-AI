@@ -130,7 +130,7 @@ export const Sidebar = ({ activeNav }) => {
   const navItems = getNavItems(user?.role);
 
   return (
-    <aside className="fixed left-0 top-16 z-30 hidden h-[calc(100vh-4rem)] w-72 overflow-y-auto border-r border-gray-200/80 bg-white/90 backdrop-blur-xl dark:border-gray-700/80 dark:bg-gray-800/90 md:block">
+    <aside className="fixed left-0 top-16 z-30 hidden h-[calc(100vh-4rem)] w-72 overflow-y-auto  bg-white/90 backdrop-blur-xl dark:border-gray-700/80 dark:bg-gray-800/90 md:block">
       <div className="p-6">
         <div className="mb-6 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 p-4 text-white shadow-lg">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] opacity-90">Operations</p>
