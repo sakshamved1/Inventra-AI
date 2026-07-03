@@ -93,7 +93,7 @@ export const AIAssistant = () => {
       <Navbar />
       <Sidebar activeNav="/ai-assistant" />
       
-      <main className="flex-1 lg:ml-64 pt-16 p-4 md:p-8 flex flex-col h-screen">
+      <main className="flex h-screen flex-1 flex-col p-4 md:ml-72 md:p-6 lg:p-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -106,8 +106,8 @@ export const AIAssistant = () => {
                 <Sparkles size={20} />
               </div>
               <div>
-                <h1 className="text-4xl font-bold text-gray-900 dark:text-white">AI Assistant</h1>
-                <p className="text-gray-600 dark:text-gray-400">Ask about inventory, transactions, database health, or your project structure</p>
+                <h1 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl lg:text-4xl">AI Assistant</h1>
+                <p className="text-sm text-gray-600 dark:text-gray-400 sm:text-base">Ask about inventory, transactions, database health, or your project structure</p>
               </div>
             </div>
           </div>

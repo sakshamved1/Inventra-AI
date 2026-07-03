@@ -141,7 +141,7 @@ export const Products = () => {
       <Navbar />
       <Sidebar activeNav="/products" />
       
-      <main className="flex-1 lg:ml-64 pt-16 p-4 md:p-8">
+      <main className="flex-1 p-4 md:ml-72 md:p-6 lg:p-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -150,8 +150,8 @@ export const Products = () => {
           {/* Header */}
           <div className="mb-8 flex items-center justify-between flex-col sm:flex-row gap-4">
             <div>
-              <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Products</h1>
-              <p className="text-gray-600 dark:text-gray-400">Manage your product catalog</p>
+              <h1 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl lg:text-4xl">Products</h1>
+              <p className="text-sm text-gray-600 dark:text-gray-400 sm:text-base">Manage your product catalog</p>
             </div>
             {(user?.role === 'admin' || user?.permissions?.add) && (
               <Button onClick={handleAddNew} className="flex items-center space-x-2">

@@ -79,7 +79,7 @@ export const Transactions = () => {
       <Navbar />
       <Sidebar activeNav="/transactions" />
       
-      <main className="flex-1 lg:ml-64 pt-16 p-4 md:p-8">
+      <main className="flex-1 p-4 md:ml-72 md:p-6 lg:p-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

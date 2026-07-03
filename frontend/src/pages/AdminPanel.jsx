@@ -73,11 +73,11 @@ export const AdminPanel = () => {
     <div className="flex min-h-screen bg-gray-50 dark:bg-gray-900">
       <Navbar />
       <Sidebar activeNav="/settings" />
-      <main className="flex-1 lg:ml-64 pt-16 p-4 md:p-8">
+      <main className="flex-1 p-4 md:ml-72 md:p-6 lg:p-8">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mx-auto max-w-7xl">
           <div className="mb-6">
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Admin Panel</h1>
-            <p className="text-gray-600 dark:text-gray-400">Approve new users and manage their permissions.</p>
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl lg:text-4xl">Admin Panel</h1>
+            <p className="text-sm text-gray-600 dark:text-gray-400 sm:text-base">Approve new users and manage their permissions.</p>
           </div>
 
           <Card>

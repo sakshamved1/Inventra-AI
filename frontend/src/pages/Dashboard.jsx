@@ -72,22 +72,22 @@ export const Dashboard = () => {
       <Navbar />
       <Sidebar activeNav="/dashboard" />
       
-      <main className="flex-1 lg:ml-64 pt-16 p-4 md:p-8">
+      <main className="flex-1 p-4 md:ml-72 md:p-6 lg:p-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="max-w-7xl mx-auto"
         >
           {/* Header */}
-          <div className="mb-8 rounded-3xl border border-gray-200/80 bg-white/80 p-6 shadow-sm backdrop-blur dark:border-gray-700/80 dark:bg-gray-800/70">
+          <div className="mb-8 rounded-3xl border border-gray-200/80 bg-white/80 p-4 shadow-sm backdrop-blur sm:p-6 dark:border-gray-700/80 dark:bg-gray-800/70">
             <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div>
                 <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-300">
                   <Sparkles size={16} />
                   Inventory Intelligence
                 </div>
-                <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">Dashboard</h1>
-                <p className="text-gray-600 dark:text-gray-400">Welcome back! Here’s a refined overview of stock health, value, and movement.</p>
+                <h1 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl lg:text-4xl">Dashboard</h1>
+                <p className="text-sm text-gray-600 dark:text-gray-400 sm:text-base">Welcome back! Here’s a refined overview of stock health, value, and movement.</p>
               </div>
               <div className="rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 px-4 py-3 text-white shadow-lg">
                 <div className="flex items-center gap-2 text-sm font-medium">

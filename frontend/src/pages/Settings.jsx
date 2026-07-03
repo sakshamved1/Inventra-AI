@@ -9,7 +9,7 @@ export const Settings = () => {
       <Navbar />
       <Sidebar activeNav="/settings" />
       
-      <main className="flex-1 lg:ml-64 pt-16 p-4 md:p-8">
+      <main className="flex-1 p-4 md:ml-72 md:p-6 lg:p-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -17,8 +17,8 @@ export const Settings = () => {
         >
           {/* Header */}
           <div className="mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Settings</h1>
-            <p className="text-gray-600 dark:text-gray-400">Manage your account and preferences</p>
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl lg:text-4xl">Settings</h1>
+            <p className="text-sm text-gray-600 dark:text-gray-400 sm:text-base">Manage your account and preferences</p>
           </div>
 
           {/* Account Settings */}
